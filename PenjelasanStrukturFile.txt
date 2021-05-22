@@ -1,9 +1,0 @@
-app.py file akan di jalankan pertama
-
-engine.py itu code nlp chatbotnya
-
-requirements.txt adalah apa saja library yang kita butuhkan
-
-nltk.txt adalah untuk mendownload corpora atau tool apa saja yang kita butuhkan dari library nltk (maksutnya download library seperti tokenizer dll yang ada dalam library nltk)
-
-procfile adalah untuk beri tau heroku bahwa main file kita adalah app.py
