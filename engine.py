@@ -42,13 +42,13 @@ def engine(userInput):
     for z, x in enumerate(data['data']):
         #buat vocab       
         data['data'][z]['pattern'] = stopword_removal(data['data'][z]['pattern']) #pattern hapus stopword
-        vocab = userInput + data['data'][z]['pattern']
-        vocab = list(dict.fromkeys(vocab)) #hilangkan duplicate
         def lemma(token):
             lemmatizer = WordNetLemmatizer()    
             return [lemmatizer.lemmatize(t) for t in token]
-        vocab = lemma(vocab)
         userInput = lemma(userInput)
+        data['data'][z]['pattern'] = lemma(data['data'][z]['pattern'])
+        vocab = userInput + data['data'][z]['pattern']
+        vocab = list(dict.fromkeys(vocab)) #hilangkan duplicate
 
         #buat bow antara userinput dan vocab
         frekuensiUserInput = [0] * len(vocab)
