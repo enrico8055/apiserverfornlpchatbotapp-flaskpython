@@ -12,7 +12,7 @@ api = Api(app)
 
 class getAPI(Resource):#tindakan
     def get(self, userInput, key): #kalo ada get request maka
-        if key == "melothria":
+        if key == "melonthria":
             res = engine(userInput)
             return { "time": str(datetime.datetime.now()),"response" : res} #respond untuk yang menghit api ini
         else:
