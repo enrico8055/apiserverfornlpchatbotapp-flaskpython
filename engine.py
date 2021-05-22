@@ -2,6 +2,7 @@ import nltk
 from nltk.stem import WordNetLemmatizer
 import json, string, numpy, random
 from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
 
 def engine(userInput):
     #ambil data pattern response dari json
@@ -24,20 +25,30 @@ def engine(userInput):
 
     #tokenisasi
     userInput = word_tokenize(userInput)
-
+    
+    #stopword remove
+    def stopword_removal(tokens, sw_list = stopwords.words('english')):
+        cleaned_token = []
+        for t in tokens:
+            if t not in sw_list:
+                cleaned_token += [t]
+        return cleaned_token
+    userInput = stopword_removal(userInput)
+    
     #tempat hasil akhir
     hasil = {"Cosin": 0, "Index": 0}
 
     #hitung cosin antara setiap userinput dan pattern unutk dapatkan response
     for z, x in enumerate(data['data']):
-        #buat vocab
+        #buat vocab       
+        data['data'][z]['pattern'] = stopword_removal(data['data'][z]['pattern']) #pattern hapus stopword
         vocab = userInput + data['data'][z]['pattern']
         vocab = list(dict.fromkeys(vocab)) #hilangkan duplicate
         def lemma(token):
             lemmatizer = WordNetLemmatizer()    
             return [lemmatizer.lemmatize(t) for t in token]
         vocab = lemma(vocab)
-        # print("Vocab : ", vocab)
+        userInput = lemma(userInput)
 
         #buat bow antara userinput dan vocab
         frekuensiUserInput = [0] * len(vocab)
