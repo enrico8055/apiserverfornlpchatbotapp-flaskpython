@@ -56,7 +56,11 @@
         "response": ["Sorry, our team will alwasy do the best for you"]
     },
     {
-        "pattern": ["where", "warranty", "location"],
+        "pattern": ["where", "warranty", "location", "claimed", "address"],
         "response": ["You can go to Jl. Mataram No. 15 or at Jl. Sangkuriang 33"]
+    },
+    {
+        "pattern": ["where", "office", "location"],
+        "response": ["At JL.Kota Baru 1002"]
     }
 ]}
