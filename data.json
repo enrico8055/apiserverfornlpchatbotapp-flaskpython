@@ -52,8 +52,11 @@
         "response": ["Sure i can do it for you :)"]
     },
     {
-        "pattern": ["is", "your", "service", "bad", "worst", "broken", "stupid"],
+        "pattern": ["is", "your", "service", "bad", "worst", "broken", "stupid", "fuck", "idiot", "bitch", "mtfk"],
         "response": ["Sorry, our team will alwasy do the best for you"]
+    },
+    {
+        "pattern": ["where", "warranty", "location"],
+        "response": ["You can go to Jl. Mataram No. 15 or at Jl. Sangkuriang 33"]
     }
-
 ]}
