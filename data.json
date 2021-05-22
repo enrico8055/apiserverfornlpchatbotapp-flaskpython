@@ -1,0 +1,59 @@
+{"data": [
+    {
+        "pattern": ["null", "null" ],
+        "response": ["Sorry i cant understand!", "Pardon i dont understand!"]
+    },
+    {
+        "pattern": ["hello", "what", "news", "good", "noon", "morning", "evening", "night", "hi"],
+        "response": ["Hello, what can I do for you?", "Hi! What do you need", "Hi! What do you want to know?"]
+    },
+    {
+        "pattern": ["no", "exist", "need", "thanks"],
+        "response": ["Okay, thank you", "Ok, thank you"]
+    },
+    {
+        "pattern": ["what", "you", "offer", "sell", "service"],
+        "response": ["Our shop sells internet installation services and PC building/ rafting :)"]
+    },
+    {
+        "pattern": ["price", "service", "install", "wifi", "internet"],
+        "response": ["The price of the service is 300 thousand rupiah only"]
+    },
+    {
+        "pattern": ["price", "service", "rafting", "build", "pc", "computer", "raft"],
+        "response": ["The price is only 1 million rupiah only for rafting"]
+    },
+    {
+        "pattern": ["benefit", "advantage", "service", "install", "wifi"],
+        "response": ["The benefit you will get the router / modem for free!"]
+    },
+    {
+        "pattern": ["benefit", "advantage", "service", "raft", "pc", "computer"],
+        "response": ["The advantage... you can choose your pc design case according to your wishes!"]
+    },
+    {
+        "pattern": ["much", "long", "time", "for", "raft", "pc", "computer"],
+        "response": ["More or less, the maximum is only about 1 week :)"]
+    },
+    {
+        "pattern": ["where", "customer", "service", "how", "contact", "to"],
+        "response": ["Please call +6281224670606 and tell them what your complaint is"]
+    },
+    {
+        "pattern": ["exists", "warranty", "much", "long", "time"],
+        "response": ["All of our services have a 2 week warranty since the order, for T&C is valid"]
+    },
+    {
+        "pattern": ["how", "do", "payment", "pay", "tutorial", "where"],
+        "response": ["Payment can be made using OVO, GoPay, Funds and Bank Transfer"]
+    },
+    {
+        "pattern": ["want", "to", "raft", "pc", "internet", "rafting", "build"],
+        "response": ["Sure i can do it for you :)"]
+    },
+    {
+        "pattern": ["is", "your", "service", "bad", "worst", "broken", "stupid"],
+        "response": ["Sorry, our team will alwasy do the best for you"]
+    }
+
+]}
