@@ -8,7 +8,7 @@
         "response": ["Hello, what can I do for you?", "Hi! What do you need", "Hi! What do you want to know?"]
     },
     {
-        "pattern": ["no", "exist", "need", "thanks"],
+        "pattern": ["no", "exist", "need", "thanks", "you"],
         "response": ["Okay, thank you", "Ok, thank you"]
     },
     {
@@ -16,7 +16,7 @@
         "response": ["Our shop sells internet installation services and PC building/ rafting :)"]
     },
     {
-        "pattern": ["price", "service", "install", "wifi", "internet"],
+        "pattern": ["price", "service", "install", "wifi", "internet", "installation", "installing"],
         "response": ["The price of the service is 300 thousand rupiah only"]
     },
     {
@@ -36,8 +36,8 @@
         "response": ["More or less, the maximum is only about 1 week :)"]
     },
     {
-        "pattern": ["where", "customer", "service", "how", "contact", "to"],
-        "response": ["Please call +6281224670606 and tell them what your complaint is"]
+        "pattern": ["where", "customer", "service", "how", "contact", "to", "live", "real"],
+        "response": ["Please call +6281224670606 and tell them what your complaint is", "Click the phone icon and i will direct you to our live customer service"]
     },
     {
         "pattern": ["exists", "warranty", "much", "long", "time"],
@@ -48,7 +48,7 @@
         "response": ["Payment can be made using OVO, GoPay, Funds and Bank Transfer"]
     },
     {
-        "pattern": ["want", "to", "raft", "pc", "internet", "rafting", "build"],
+        "pattern": ["want", "to", "raft", "pc", "internet", "rafting", "build", "want", "install", "installation", "help"],
         "response": ["Sure i can do it for you :)"]
     },
     {
