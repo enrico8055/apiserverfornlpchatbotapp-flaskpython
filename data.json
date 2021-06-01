@@ -9,7 +9,7 @@
     },
     {
         "pattern": ["no", "exist", "need", "thanks", "you"],
-        "response": ["Okay, thank you", "Ok, thank you"]
+        "response": ["Okay, thank you have a good day :)", "Ok, Nice to meet you"]
     },
     {
         "pattern": ["what", "you", "offer", "sell", "service"],
@@ -53,14 +53,34 @@
     },
     {
         "pattern": ["is", "your", "service", "bad", "worst", "broken", "stupid", "fuck", "idiot", "bitch", "mtfk"],
-        "response": ["Sorry, our team will alwasy do the best for you"]
+        "response": ["Sorry fo you inconvenient, our team will always do the best for you"]
     },
     {
         "pattern": ["where", "warranty", "location", "claimed", "address"],
-        "response": ["You can go to Jl. Mataram No. 15 or at Jl. Sangkuriang 33"]
+        "response": ["You can go to Jl. Mataram No. 15 or at Jl. Sangkuriang 33 to claim the warranty"]
     },
     {
         "pattern": ["where", "office", "location"],
-        "response": ["At JL.Kota Baru 1002"]
+        "response": ["At JL.Kota Baru 1002", "You can go to JL.Kota Baru 1002"]
+    },
+    {
+        "pattern": ["like", "love", "services", "service", "amazing", "adorable", "good", "satisfied"],
+        "response": ["Thank you, your satisfaction is my pleasure"]
+    },
+    {
+        "pattern": ["when", "this", "shop", "established", "since", "establish"],
+        "response": ["This shop established since 1999"]
+    },
+    {
+        "pattern": ["term", "and", "condition"],
+        "response": ["Items that have been purchased cannot be returned"]
+    },
+    {
+        "pattern": ["how", "to", "transaction", "order", "service", "where"],
+        "response": ["Until now you cant order directly form this app, but you can call our CS to order our service"]
+    },
+    {
+        "pattern": ["what", "can", "you", "do", "help"],
+        "response": ["I can help you to answer your question around our service", "You can ask me anything about our service and i will answer the best that i can"]
     }
 ]}
