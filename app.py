@@ -9,6 +9,8 @@ import json, datetime
 app = Flask(__name__)
 api = Api(app)
 
+with open("pricelist.json") as file:
+        pricelist = json.load(file)
 
 class getAPI(Resource):#tindakan
     def get(self, userInput, key): #kalo ada get request maka
@@ -20,6 +22,13 @@ class getAPI(Resource):#tindakan
 api.add_resource(getAPI, "/get/<string:key>/<string:userInput>") #kalo di hit dgn method get /hit maka lakukan yang asa di getAPI, slash string userInput artinya harus passing data berupa string melalui url yang akan ditampung di var userINput
 
 
+class getAPI2(Resource):#tindakan
+    def get(self, key):
+        if key == "pricelist":
+            return pricelist
+        else:
+            return { "time": str(datetime.datetime.now()),"response" : "Sorry request decline!"}
+api.add_resource(getAPI2, "/get/<string:key>")
 
 
 class postAPI(Resource): #tindakan
