@@ -1,10 +1,10 @@
-{"list": [
+{"list" :[
     {
-        "id": 0,
-        "item": "Raft PC / Build PC Rp 1.000.000"
+        "title": "R",
+        "data": ["Raft PC / Build PC Rp 1.000.000"]
     },
     {
-        "id": 1,
-        "item": "Wifi Installation Rp 300.000"
+        "title": "W",
+        "data": ["Wifi Installation Rp 300.000"]
     }
 ]}
