@@ -1,7 +1,6 @@
 import nltk
 from nltk.stem import WordNetLemmatizer
 import json, string, numpy, random
-from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 
@@ -25,7 +24,7 @@ def engine(userInput):
     userInput = removePunctuation(userInput.lower())
 
     #tokenisasi
-    userInput = word_tokenize(userInput)
+    userInput = userInput.split()
     
     #stopword remove
     def stopword_removal(tokens, sw_list = stopwords.words('english')):
