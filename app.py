@@ -1,6 +1,8 @@
 #install requirement.txt di linux, pip install -r requirements.txt
 
 from engine import engine
+from auth import authentification
+from create import createUser
 from flask import Flask, request
 from flask_restful import Api, Resource
 import json, datetime
@@ -21,7 +23,7 @@ class getAPI(Resource):#tindakan
             return { "time": str(datetime.datetime.now()),"response" : "Sorry request decline!"}
 api.add_resource(getAPI, "/get/<string:key>/<string:userInput>") #kalo di hit dgn method get /hit maka lakukan yang asa di getAPI, slash string userInput artinya harus passing data berupa string melalui url yang akan ditampung di var userINput
 
-
+#ambil daftar harga
 class getAPI2(Resource):#tindakan
     def get(self, key):
         if key == "pricelist":
@@ -29,6 +31,22 @@ class getAPI2(Resource):#tindakan
         else:
             return { "time": str(datetime.datetime.now()),"response" : "Sorry request decline!"}
 api.add_resource(getAPI2, "/get/<string:key>")
+
+
+
+#autentifikasi login dan signup
+class getAPI3(Resource):#tindakan
+    def get(self, phone, password, key):
+        if key == "auth":
+            res = authentification(phone, password)
+            return res
+        elif key == "create":
+            res = createUser(phone, password)
+            return res
+        else:
+            return { "time": str(datetime.datetime.now()),"response" : "Sorry request decline!"}
+api.add_resource(getAPI3, "/get/<string:key>/<string:phone>/<string:password>")
+
 
 
 class postAPI(Resource): #tindakan
