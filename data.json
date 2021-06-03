@@ -1,31 +1,31 @@
 {"data": [
     {
-        "pattern": ["null", "null" ],
+        "pattern": ["null", "null"],
         "response": ["Sorry i cant understand!", "Pardon i dont understand!"]
     },
     {
-        "pattern": ["hello", "what", "news", "good", "noon", "morning", "evening", "night", "hi"],
+        "pattern": ["hello", "what", "news", "good", "noon", "morning", "evening", "night", "hi", "halo", "apa", "kabar"],
         "response": ["Hello, what can I do for you?", "Hi! What do you need", "Hi! What do you want to know?"]
     },
     {
         "pattern": ["no", "exist", "need", "thanks", "you"],
-        "response": ["Okay, thank you have a good day :)", "Ok, Nice to meet you"]
+        "response": ["Okay, thank you have a good day :)", "Ok, Nice to meet you", "bye..."]
     },
     {
         "pattern": ["what", "you", "offer", "sell", "service"],
-        "response": ["Our shop sells internet installation services and PC building/ rafting :)"]
+        "response": ["Our shop sells internet installation services and PC building/ rafting for low and high spec PC :)"]
     },
     {
-        "pattern": ["price", "service", "install", "wifi", "internet", "installation", "installing"],
+        "pattern": ["price", "service", "install", "wifi", "internet", "installation", "installing", "cost"],
         "response": ["The price of the service is 300 thousand rupiah only"]
     },
     {
-        "pattern": ["price", "service", "rafting", "build", "pc", "computer", "raft"],
-        "response": ["The price is only 1 million rupiah only for rafting"]
+        "pattern": ["price", "service", "rafting", "build", "pc", "computer", "raft", "cost"],
+        "response": ["The price is only 1 million rupiah for rafting high spec PC and 500.000 for low spec PC"]
     },
     {
         "pattern": ["benefit", "advantage", "service", "install", "wifi"],
-        "response": ["The benefit you will get the router / modem for free!"]
+        "response": ["The benefit you will get the router / modem for free!", "Free router for U, yes it FREE..."]
     },
     {
         "pattern": ["benefit", "advantage", "service", "raft", "pc", "computer"],
@@ -33,7 +33,7 @@
     },
     {
         "pattern": ["much", "long", "time", "for", "raft", "pc", "computer"],
-        "response": ["More or less, the maximum is only about 1 week :)"]
+        "response": ["More or less, the maximum is only about 1 week :)", "One week is enough for us :)"]
     },
     {
         "pattern": ["where", "customer", "service", "how", "contact", "to", "live", "real"],
@@ -65,22 +65,30 @@
     },
     {
         "pattern": ["like", "love", "services", "service", "amazing", "adorable", "good", "satisfied"],
-        "response": ["Thank you, your satisfaction is my pleasure"]
+        "response": ["Thank you, your satisfaction is my pleasure", "Owwh my honour", "Glad to hear that"]
     },
     {
         "pattern": ["when", "this", "shop", "established", "since", "establish"],
-        "response": ["This shop established since 1999"]
+        "response": ["This shop established since 1999", "1999 is our shop birthday"]
     },
     {
         "pattern": ["term", "and", "condition"],
-        "response": ["Items that have been purchased cannot be returned"]
+        "response": ["Our shop TC is Items that have been purchased cannot be returned"]
     },
     {
-        "pattern": ["how", "to", "transaction", "order", "service", "where"],
+        "pattern": ["how", "to", "transaction", "order", "service", "where", "rent", "buy", "do"],
         "response": ["Until now you cant order directly form this app, but you can call our CS to order our service"]
     },
     {
         "pattern": ["what", "can", "you", "do", "help"],
         "response": ["I can help you to answer your question around our service", "You can ask me anything about our service and i will answer the best that i can"]
+    },
+    {
+        "pattern": ["discounts", "promo", "promos", "special", "price", "event"],
+        "response": ["Sorry until now we have no discount dan no special price", "Sorry we dont have it, when available we will contact you ASAP"]
+    },
+    {
+        "pattern": ["term", "and", "condition", "warranty"],
+        "response": ["We dont accept customer error", "Human error cant we tolerate"]
     }
 ]}
