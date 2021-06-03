@@ -80,7 +80,7 @@
         "response": ["Until now you cant order directly form this app, but you can call our CS to order our service"]
     },
     {
-        "pattern": ["what", "can", "you", "do", "help"],
+        "pattern": ["what", "can", "you", "do", "help", "ask", "me"],
         "response": ["I can help you to answer your question around our service", "You can ask me anything about our service and i will answer the best that i can"]
     },
     {
