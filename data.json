@@ -4,11 +4,11 @@
         "response": ["Sorry i cant understand!", "Pardon i dont understand!"]
     },
     {
-        "pattern": ["hello", "what", "news", "good", "noon", "morning", "evening", "night", "hi", "halo", "apa", "kabar"],
+        "pattern": ["hello", "how", "are", "good", "noon", "morning", "evening", "night", "hi", "halo", "apa", "kabar", "you"],
         "response": ["Hello, what can I do for you?", "Hi! What do you need", "Hi! What do you want to know?"]
     },
     {
-        "pattern": ["no", "exist", "need", "thanks", "you"],
+        "pattern": ["no", "exist", "need", "thanks", "you", "bye", "good"],
         "response": ["Okay, thank you have a good day :)", "Ok, Nice to meet you", "bye..."]
     },
     {
@@ -68,7 +68,7 @@
         "response": ["Thank you, your satisfaction is my pleasure", "Owwh my honour", "Glad to hear that"]
     },
     {
-        "pattern": ["when", "this", "shop", "established", "since", "establish"],
+        "pattern": ["when", "this", "shop", "established", "since", "establish", "born", "date"],
         "response": ["This shop established since 1999", "1999 is our shop birthday"]
     },
     {
@@ -90,5 +90,13 @@
     {
         "pattern": ["term", "and", "condition", "warranty"],
         "response": ["We dont accept customer error", "Human error cant we tolerate"]
+    },
+    {
+        "pattern": ["work", "time", "when", "close", "open"],
+        "response": ["Our shop open at 8Am To 8Pm EveryDay", "Everyday 8Am until 8Pm is our work time"]
+    },
+    {
+        "pattern": ["day", "off", "when", "open", "close", "red", "date"],
+        "response": ["We dont leave even day off", "For your satisfaction no day off for our service", "what is day off? No day off for us. :)"]
     }
 ]}
