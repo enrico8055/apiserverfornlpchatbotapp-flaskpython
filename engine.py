@@ -19,7 +19,18 @@ def engine(userInput):
             punctuation = "!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
             text_nopunct = "".join([c for c in txt if c not in punctuation])
             return text_nopunct
-    userInput = removePunctuation(userInput.lower())
+    userInput = removePunctuation(userInput)
+    
+    #case folding lower
+    lowUserInput = []
+    for i, x in enumerate(userInput):
+        if ord(x) == 32:
+            lowUserInput.append(x)
+        elif ord(x) < 97:
+            lowUserInput.append(chr(ord(x) + 32))
+        else:
+            lowUserInput.append(x)
+    userInput = "".join(lowUserInput)
 
     #tokenisasi
     token = []
