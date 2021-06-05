@@ -40,8 +40,8 @@
         "response": ["Please call +6281224670606 and tell them what your complaint is", "Click the phone icon and i will direct you to our live customer service"]
     },
     {
-        "pattern": ["exists", "warranty", "much", "long", "time"],
-        "response": ["All of our services have a 2 week warranty since the order, for T&C is valid"]
+        "pattern": ["exists", "warranty", "much", "long", "time", "day", "year", "month"],
+        "response": ["All of our services have a 2 week warranty since the order, for T&C is valid", "I will give you two week for the warranty"]
     },
     {
         "pattern": ["how", "do", "payment", "pay", "tutorial", "where"],
