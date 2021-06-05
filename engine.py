@@ -1,6 +1,6 @@
 import nltk
 from nltk.stem import WordNetLemmatizer
-import json, string, numpy, random
+import json, numpy, random
 from nltk.stem.porter import PorterStemmer
 
 def engine(userInput):
@@ -18,7 +18,8 @@ def engine(userInput):
 
     #hapus tanda baca
     def removePunctuation(txt):
-            text_nopunct = "".join([c for c in txt if c not in string.punctuation])
+            punctuation = "!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
+            text_nopunct = "".join([c for c in txt if c not in punctuation])
             return text_nopunct
     userInput = removePunctuation(userInput.lower())
 
