@@ -1,7 +1,6 @@
 import nltk
 from nltk.stem import WordNetLemmatizer
 import json, string, numpy, random
-from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 
 def engine(userInput):
@@ -27,13 +26,14 @@ def engine(userInput):
     userInput = userInput.split()
     
     #stopword remove
-    def stopword_removal(tokens, sw_list = stopwords.words('english')):
+    sw_list = ["i", "me", "my", "myself", "we", "our", "ours", "ourselves", "you", "your", "yours", "yourself", "yourselves", "he", "him", "his", "himself", "she", "her", "hers", "herself", "it", "its", "itself", "they", "them", "their", "theirs", "themselves", "what", "which", "who", "whom", "this", "that", "these", "those", "am", "is", "are", "was", "were", "be", "been", "being", "have", "has", "had", "having", "do", "does", "did", "doing", "a", "an", "the", "and", "but", "if", "or", "because", "as", "until", "while", "of", "at", "by", "for", "with", "about", "against", "between", "into", "through", "during", "before", "after", "above", "below", "to", "from", "up", "down", "in", "out", "on", "off", "over", "under", "again", "further", "then", "once", "here", "there", "when", "where", "why", "how", "all", "any", "both", "each", "few", "more", "most", "other", "some", "such", "no", "nor", "not", "only", "own", "same", "so", "than", "too", "very", "s", "t", "can", "will", "just", "don", "should", "now"]
+    def stopword_removal(tokens, sw_list):
         cleaned_token = []
         for t in tokens:
             if t not in sw_list:
                 cleaned_token += [t]
         return cleaned_token
-    userInput = stopword_removal(userInput)
+    userInput = stopword_removal(userInput, sw_list)
     
     #tempat hasil akhir
     hasil = {"Cosin": 0, "Index": 0}
@@ -41,7 +41,7 @@ def engine(userInput):
     #hitung cosin antara setiap userinput dan pattern unutk dapatkan response
     for z, x in enumerate(data['data']):
         #remove stopword     
-        data['data'][z]['pattern'] = stopword_removal(data['data'][z]['pattern']) #pattern hapus stopword
+        data['data'][z]['pattern'] = stopword_removal(data['data'][z]['pattern'], sw_list) #pattern hapus stopword
         
         #lematization
         def lemma(token):
