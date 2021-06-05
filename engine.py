@@ -1,7 +1,5 @@
-import nltk
-from nltk.stem import WordNetLemmatizer
 import json, numpy, random
-from nltk.stem.porter import PorterStemmer
+from nltk.stem import PorterStemmer
 
 def engine(userInput):
     #ambil data pattern response dari json
@@ -43,13 +41,6 @@ def engine(userInput):
     for z, x in enumerate(data['data']):
         #remove stopword     
         data['data'][z]['pattern'] = stopword_removal(data['data'][z]['pattern'], sw_list) #pattern hapus stopword
-        
-        #lematization
-        def lemma(token):
-            lemmatizer = WordNetLemmatizer()    
-            return [lemmatizer.lemmatize(t) for t in token]
-        userInput = lemma(userInput)
-        data['data'][z]['pattern'] = lemma(data['data'][z]['pattern'])
 
         #stemming
         def stemming(token):
